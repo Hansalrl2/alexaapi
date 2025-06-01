@@ -1,0 +1,443 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.btn {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #0f172a;
+    border-color: #0f172a;
+}
+
+pre {
+    white-space: pre-wrap;
+    /* Ensures the text wraps within the container */
+    word-wrap: break-word;
+    /* Breaks long words to fit within the container */
+}
+code {
+    display: block;
+    padding: 1em;
+    background: #2d3748;
+    color: #e2e8f0;
+    border-radius: 0.5em;
+
+    overflow-x: auto;
+}
+
+.category {
+    transition: transform 0.3s ease-in-out;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #7f00ff, #00bfff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* From Uiverse.io by aadium */
+.curlies {
+    color: #ff0000;
+}
+
+.sc {
+    color: #ff00ff;
+}
+
+.rounds {
+    color: #ffffff;
+}
+
+.operator {
+    color: #efff17;
+}
+
+.s1 {
+    color: #22ff00;
+}
+
+.s2 {
+    color: #4281ff;
+}
+
+.s3 {
+    color: #ff4284;
+}
+
+.s4 {
+    color: #ffae00;
+}
+
+.s5 {
+    color: #ffffff;
+}
+
+.s6 {
+    color: #ffff00;
+}
+
+.s7 {
+    color: #7bf8ff;
+}
+
+.s8 {
+    color: #ad00df;
+}
+
+/* Message chatbot */
+
+body.noscroll {
+    overflow: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+textarea {
+    overflow-y: hidden;
+}
+
+think {
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-left: 4px solid #ccc;
+    background-color: #f9f9f9;
+    font-style: italic;
+    color: #555;
+}
+
+#chatContainer {
+    padding-bottom: 150px;
+    min-height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message {
+    font-size: 0.75rem;
+    color: white;
+    margin-bottom: 3px;
+    display: flex;
+    margin: 4px 12px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.message.user .message-bubble {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 18px 18px 0 18px;
+    text-align: left;
+    max-width: 70%;
+}
+
+.message.ai {
+    justify-content: flex-start;
+}
+
+.message.ai .message-bubble {
+    color: white;
+    max-width: 100% !important;
+    padding: 10px 0 !important;
+    line-height: 1.6;
+}
+
+.message-bubble {
+    padding: 10px 14px;
+    font-size: 0.9rem !important;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+.message-bubble h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.message-bubble h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0.8em 0;
+}
+
+.message-bubble h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0.6em 0;
+}
+
+.message-bubble ul,
+.message-bubble ol {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+}
+
+.message-bubble li {
+    margin: 0.25em 0;
+}
+
+.message-bubble code {
+    background-color: white;
+    color: #121212;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.message-bubble pre {
+    background-color: white;
+    color: #121212;
+    padding: 1em;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+.message-bubble pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.message-bubble blockquote {
+    border-left: 3px solid #e5e7eb;
+    margin: 0.5em 0;
+    padding-left: 1em;
+    color: #4b5563;
+}
+
+.message-bubble a {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.message-bubble table {
+    border-collapse: collapse;
+    margin: 0.5em 0;
+    width: 100%;
+}
+
+.message-bubble th,
+.message-bubble td {
+    border: 1px solid #e5e7eb;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.message-bubble th {
+    background-color: #2563eb;
+}
+
+.loading-dots {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.loading-dots span {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-dots span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+.command-list {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 200px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.command-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.command-list li {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.command-list li:hover {
+    background-color: #f3f4f6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 640px) {
+    .message {
+        margin: 4px 8px;
+    }
+
+    .message-bubble {
+        font-size: 0.9rem;
+    }
+}
+
+/* message chatbot */
+
+@media (min-width: 1024px) {
+    .text-lg {
+        font-size: 1.125rem;
+    }
+
+    .text-xl {
+        font-size: 1.25rem;
+    }
+
+    .text-2xl {
+        font-size: 1.5rem;
+    }
+
+    .text-3xl {
+        font-size: 1.875rem;
+    }
+
+    .text-4xl {
+        font-size: 2.25rem;
+    }
+
+    .text-5xl {
+        font-size: 3rem;
+    }
+
+    .p-4 {
+        padding: 1.5rem;
+    }
+
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .p-8 {
+        padding: 2.5rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    .mb-6 {
+        margin-bottom: 2rem;
+    }
+
+    .mb-10 {
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p,
+    li {
+        font-size: 1.25rem;
+    }
+
+    .btn {
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+    }
+
+    .icon {
+        font-size: 5rem;
+    }
+
+    .input {
+        font-size: 1.25rem;
+        padding: 1rem;
+    }
+
+    .main-content {
+        margin-top: 10rem;
+    }
+
+    .section {
+        margin-top: 5rem;
+    }
+
+    .footer {
+        margin-top: 5rem;
+    }
+}
