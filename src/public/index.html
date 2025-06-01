@@ -1,0 +1,327 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="shortcut icon" href="img/logo.png" type="image/png" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+  <meta name="title" content="Alexa | Unlimited Free API">
+  <meta name="description" content="Discover the power of API, your ultimate solution for accessing a wide range of APIs without any hassle. No registration, no credit card, no personal data required. Just pure, unlimited access to the APIs you need." />
+  <meta name="keywords" content="Alexa, Rest Api, Downloader, Free Api Unlimited" />
+  
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Alexa | Unlimited Free API">
+    <meta property="og:description" content="Discover the power of API, your ultimate solution for accessing a wide range of APIs without any hassle. No registration, no credit card, no personal data required. Just pure, unlimited access to the APIs you need">
+    <meta property="og:image" content="https://media-hosting.imagekit.io//bf1a9a78ac924202/Proyek%20Baru%2027%20[F36D413].png?Expires=1836612676&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eXBGaqOP3z7WTeF0xCimldsGUHzDJz-xl6cz7iNM4f85AHeZ3M5u-~EaB3PqdGYbEUOYuuSIIaJXoYb0b-PkGF-joQTXzNjRZmN31Ck1KDhA6C4pyxA9I-emsi2DhW0drAmmCmKRAuLTYPv2dJgcL5tG4GvlUzyUBjS3kc5QXbHyaTGwMFherMwKbDPRl3TJ1zvkNb1US2YZDT8xVkqnq3UAUpkZCOJO65uH-FgMA7HbE4YXhP9cHA0DcmUgGnJWq8cHCE666nAgGe1q2n8VB0r8XS31GxLXqVxNixcwt2C1geddvVfD9EuOasmetxvErPQ8EVUWIf98M~Pae0gooA__">
+    <meta property="og:url" content="/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alexa | Unlimited Free API">
+    <meta name="twitter:description" content="Discover the power of API, your ultimate solution for accessing a wide range of APIs without any hassle. No registration, no credit card, no personal data required. Just pure, unlimited access to the APIs you need">
+    <meta name="twitter:image" content="https://media-hosting.imagekit.io//bf1a9a78ac924202/Proyek%20Baru%2027%20[F36D413].png?Expires=1836612676&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eXBGaqOP3z7WTeF0xCimldsGUHzDJz-xl6cz7iNM4f85AHeZ3M5u-~EaB3PqdGYbEUOYuuSIIaJXoYb0b-PkGF-joQTXzNjRZmN31Ck1KDhA6C4pyxA9I-emsi2DhW0drAmmCmKRAuLTYPv2dJgcL5tG4GvlUzyUBjS3kc5QXbHyaTGwMFherMwKbDPRl3TJ1zvkNb1US2YZDT8xVkqnq3UAUpkZCOJO65uH-FgMA7HbE4YXhP9cHA0DcmUgGnJWq8cHCE666nAgGe1q2n8VB0r8XS31GxLXqVxNixcwt2C1geddvVfD9EuOasmetxvErPQ8EVUWIf98M~Pae0gooA__">
+    
+  <!---== CSS file ==--->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen">
+  
+  <!---=== Header ===--->
+  <header class="w-full flex justify-between items-center p-4 lg:p-6 bg-gray-900 bg-opacity-50 backdrop-blur fixed top-0 left-0 right-0 z-10">
+    <img alt="Alexa logo" class="w-10 h-10 lg:w-16 lg:h-16 rounded-full" height="100" src="img/logo.png" width="100" />
+    <div class="relative dropdown" id="dropdown">
+      <i class="fas fa-bars text-white cursor-pointer text-xl lg:text-2xl" id="dropdown-icon" onclick="toggleDropdown()">
+      </i>
+      <ul class="dropdown-menu absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg">
+        <li class="px-4 py-2 hover:bg-gray-700 flex items-center">
+          <i class="fas fa-home mr-2"> </i>
+          Home
+        </li>
+        <li class="px-4 py-2 hover:bg-gray-700 flex items-center">
+          <i class="fas fa-info-circle mr-2"> </i>
+          About
+        </li>
+        <li class="px-4 py-2 hover:bg-gray-700 flex items-center">
+          <i class="fas fa-cogs mr-2"> </i>
+          Services
+        </li>
+        <li class="px-4 py-2 hover:bg-gray-700 flex items-center">
+          <i class="fas fa-envelope mr-2"> </i>
+          Contact
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!---=== Header ===--->
+    
+  <!---=== Main ===--->
+  <main class="flex flex-col items-center text-center mt-20 lg:mt-32 px-4 md:px-8 lg:px-16 xl:px-32">
+    
+    <h2 class="text-3xl lg:text-5xl font-bold gradient-text mb-4 lg:mb-6" data-aos="fade-down" data-aos-duration="3000">
+      Get Unlimited Free API
+    </h2>
+    <p class="text-gray-400 mb-6 lg:mb-10 max-w-3xl text-lg lg:text-xl" data-aos="fade-down" data-aos-duration="2000">
+      Discover the power of API, your ultimate solution for
+      accessing a wide range of APIs without any hassle. No
+      registration, no credit card, no personal data required. Just
+      pure, unlimited access to the APIs you need.
+    </p>
+    <div class="flex flex-wrap justify-center space-x-4 mb-10 lg:mb-16">
+      <a href="/docs">
+      <button class="bg-blue-500 text-white px-4 py-2 lg:px-6 lg:py-3 rounded-full btn text-lg lg:text-xl" data-aos="fade-down" data-aos-duration="1900">
+        Get Started
+      </button>
+      </a>
+      <a href="/chatbot">
+      <button class="bg-blue-500 text-white px-4 py-2 lg:px-6 lg:py-3 rounded-full btn text-lg lg:text-xl" data-aos="fade-down" data-aos-duration="1800">
+        Chatbot
+      </button>
+      </a>
+    </div>
+    <div class="flex flex-wrap justify-center space-x-8 mb-10 lg:mb-16">
+      <div class="text-center" data-aos="fade-down" data-aos-duration="1700">
+        <p class="text-3xl lg:text-5xl font-bold text-blue-400" id="total-visitors">
+          0
+        </p>
+        <p class="text-gray-400 text-lg lg:text-xl">
+          Total Visitor
+        </p>
+      </div>
+      <div class="text-center" data-aos="fade-down" data-aos-duration="1600">
+        <p class="text-3xl lg:text-5xl font-bold text-blue-400" id="total-request">
+          0
+        </p>
+        <p class="text-gray-400 text-lg lg:text-xl">
+          Daily Requests
+        </p>
+      </div>
+      <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
+        <p class="text-3xl lg:text-5xl font-bold text-blue-400" id="total-endpoint">
+          0
+        </p>
+        <p class="text-gray-400 text-lg lg:text-xl">
+          Total Endpoints
+        </p>
+      </div>
+    </div>
+  </main>
+  <!---=== end Main ===--->
+  
+  <!--== kategori ==-->
+  <section class="w-full mt-10 lg:mt-16 px-4 md:px-8 lg:px-16 xl:px-32">
+    <h3 class="text-2xl lg:text-4xl font-bold gradient-text text-center mb-6 lg:mb-10" data-aos="fade-down" data-aos-duration="1400">
+      Explore Our API
+    </h3>
+    <p class="text-gray-400 mb-6 lg:mb-10 max-w-3xl text-center text-lg lg:text-xl mx-auto" data-aos="fade-down" data-aos-duration="1300">
+    At Alexa, we offer a wide range of services to meet your API needs. Our services are designed to provide you with the best tools and resources to integrate and utilize APIs effectively.
+   </p>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="flex flex-col items-center category" data-aos="fade-down" data-aos-duration="1200">
+        <div class="bg-gray-800 p-4 lg:p-6 rounded-lg">
+          <a href="/download">
+            <i class="uil uil-file-download-alt text-blue-400 text-4xl lg:text-5xl">
+            </i>
+          </a>
+        </div>
+        <p class="text-gray-400 mt-2 lg:mt-4 text-lg lg:text-xl">
+          Download
+        </p>
+      </div>
+      <div class="flex flex-col items-center category" data-aos="fade-down" data-aos-duration="1100">
+        <div class="bg-gray-800 p-4 lg:p-6 rounded-lg">
+          <a href="/ai">
+            <i class="uil uil-processor text-blue-400 text-4xl lg:text-5xl">
+            </i>
+          </a>
+        </div>
+        <p class="text-gray-400 mt-2 lg:mt-4 text-lg lg:text-xl">
+          AI
+        </p>
+      </div>
+      <div class="flex flex-col items-center category" data-aos="fade-down" data-aos-duration="1000">
+        <div class="bg-gray-800 p-4 lg:p-6 rounded-lg">
+          <a href="/search">
+            <i class="uil uil-credit-card-search text-blue-400 text-4xl lg:text-5xl">
+            </i>
+          </a>
+        </div>
+        <p class="text-gray-400 mt-2 lg:mt-4 text-lg lg:text-xl">
+          Search
+        </p>
+      </div>
+      <div class="flex flex-col items-center category" data-aos="fade-down" data-aos-duration="900">
+        <div class="bg-gray-800 p-4 lg:p-6 rounded-lg">
+          <a href="/tools">
+            <i class="uil uil-icons text-blue-400 text-4xl lg:text-5xl">
+            </i>
+          </a>
+        </div>
+        <p class="text-gray-400 mt-2 lg:mt-4 text-lg lg:text-xl">
+          Tools
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--== end kategori ==-->
+  
+  <!---=== service ===--->
+  <section class="w-full mt-10 lg:mt-16 px-4 md:px-8 lg:px-16 xl:px-32">
+    <h3 class="text-2xl lg:text-4xl font-bold gradient-text text-center mb-6 lg:mb-10" data-aos="fade-up">
+      Use This API For
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-6 rounded-lg text-center" data-aos="fade-up">
+        <h4 class="text-xl lg:text-2xl font-bold text-white mb-2">
+          Social Media Dashboard
+        </h4>
+        <p class="text-gray-400">
+          A comprehensive dashboard for managing and analyzing
+          social media accounts.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center" data-aos="fade-up">
+        <h4 class="text-xl lg:text-2xl font-bold text-white mb-2">
+          Content Management System
+        </h4>
+        <p class="text-gray-400">
+          A CMS that integrates with various APIs to manage and
+          publish content.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center" data-aos="fade-up">
+        <h4 class="text-xl lg:text-2xl font-bold text-white mb-2">
+          E-commerce Platform
+        </h4>
+        <p class="text-gray-400">
+          An e-commerce platform that uses APIs for product
+          management and payment processing.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center" data-aos="fade-up">
+        <h4 class="text-xl lg:text-2xl font-bold text-white mb-2">
+          Mobile App
+        </h4>
+        <p class="text-gray-400">
+          A mobile application that leverages APIs for user
+          authentication and data retrieval.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center" data-aos="fade-up">
+        <h4 class="text-xl lg:text-2xl font-bold text-white mb-2">
+          Analytics Tool
+        </h4>
+        <p class="text-gray-400">
+          An analytics tool that uses APIs to gather and visualize
+          data.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center" data-aos="fade-up">
+        <h4 class="text-xl lg:text-2xl font-bold text-white mb-2">
+          Chatbot
+        </h4>
+        <p class="text-gray-400">
+          A chatbot that integrates with APIs to provide real-time
+          responses and data.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!---=== end Service ===--->
+  
+  <!---=== Faq ===--->
+  <section class="w-full mt-10 lg:mt-16 px-4 md:px-8 lg:px-16 xl:px-32">
+    <h3 class="text-2xl lg:text-4xl font-bold gradient-text text-center mb-6 lg:mb-10" data-aos="fade-up">
+      Frequently Asked Questions
+    </h3>
+    <div class="flex flex-col items-center">
+      <div class="w-full max-w-3xl">
+        <div class="mb-4 lg:mb-6">
+          <h4 class="text-lg lg:text-2xl font-bold text-white mb-2 lg:mb-4" data-aos="fade-right">
+            What is API?
+          </h4>
+          <p class="text-gray-400 text-base lg:text-lg" data-aos="fade-right">
+            API is a service that provides a wide range of
+            APIs for free, with no registration or personal data
+            required.
+          </p>
+        </div>
+        <div class="mb-4 lg:mb-6">
+          <h4 class="text-lg lg:text-2xl font-bold text-white mb-2 lg:mb-4" data-aos="fade-right">
+            How do I start using API?
+          </h4>
+          <p class="text-gray-400 text-base lg:text-lg" data-aos="fade-right">
+            Simply visit our documentation page and start making
+            requests to our APIs. No sign-up is needed.
+          </p>
+        </div>
+        <div class="mb-4 lg:mb-6">
+          <h4 class="text-lg lg:text-2xl font-bold text-white mb-2 lg:mb-4" data-aos="fade-right">
+            Are there any usage limits?
+          </h4>
+          <p class="text-gray-400 text-base lg:text-lg" data-aos="fade-right">
+            No, you can make unlimited requests to our APIs
+            without any restrictions.
+          </p>
+        </div>
+        <div class="mb-4 lg:mb-6">
+          <h4 class="text-lg lg:text-2xl font-bold text-white mb-2 lg:mb-4" data-aos="fade-right">
+            Is my data secure with API?
+          </h4>
+          <p class="text-gray-400 text-base lg:text-lg" data-aos="fade-right">
+            Yes, we prioritize your security and privacy. We do
+            not require any personal data to use our APIs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---=== end Faq ===--->
+  
+  <!--== contact ==--->
+  <section class="w-full mt-10 lg:mt-16 px-4 md:px-8 lg:px-16 xl:px-32">
+    <h3 class="text-2xl lg:text-4xl font-bold gradient-text text-center mb-6 lg:mb-10" data-aos="fade-up" data-aos-duration="200">
+      Follow Us
+    </h3>
+    <div class="flex justify-center space-x-6" >
+      <a class="text-gray-400 hover:text-white" href="#" data-aos="fade-up" data-aos-duration="400">
+        <i class="fab fa-facebook-f text-4xl lg:text-5xl"> </i>
+      </a>
+      <a class="text-gray-400 hover:text-white" href="#" data-aos="fade-up" data-aos-duration="500">
+        <i class="fab fa-twitter text-4xl lg:text-5xl"> </i>
+      </a>
+      <a class="text-gray-400 hover:text-white" href="#" data-aos="fade-up" data-aos-duration="600">
+        <i class="fab fa-linkedin-in text-4xl lg:text-5xl"> </i>
+      </a>
+      <a class="text-gray-400 hover:text-white" href="#" data-aos="fade-up" data-aos-duration="700">
+        <i class="fab fa-instagram text-4xl lg:text-5xl"> </i>
+      </a>
+    </div>
+  </section>
+  <!--== end contact ==--->
+  
+  <!--== Footer ==--->
+  <footer class="w-full bg-gray-900 text-gray-400 py-4 lg:py-6 mt-10 lg:mt-16">
+    <div class="flex flex-col items-center">
+      <p class="text-gray-400 text-base lg:text-lg">
+        © 2023 Alexa. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!--== End Footer ==--->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init()
+  });
+</script>
+</body>
+</html>
